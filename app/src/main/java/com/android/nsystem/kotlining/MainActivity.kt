@@ -6,7 +6,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
-    private val dataTypeing : DataTypeing = DataTypeing()
+    private val functioning : Functioning = Functioning()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -14,22 +14,25 @@ class MainActivity : AppCompatActivity() {
 
         //menampilkan data double
         btn_double.setOnClickListener {
-            tv.text = dataTypeing.getNilaiDouble().toString()
+            tv.text = functioning.getNilaiDoubleOperation()
         }
 
         //menampilkan data integer
         btn_integer.setOnClickListener {
-            tv.text = dataTypeing.getAngka().toString()
+            tv.text = functioning.getAngkaOperation()
+//            tv.text = functioning.customAdd(firstValue = 1, secondValue = 2).toString()
+//            tv.text = functioning.customAdd(secondValue = 2, firstValue = 1).toString()
+//            tv.text = functioning.customAdd(secondValue = 2).toString()
         }
 
         //menampilkan data string
         btn_string.setOnClickListener {
-            tv.text = dataTypeing.getKotaTinggal()
+            tv.text = functioning.getKotaTinggal()
         }
 
         //menampilkan data float
         btn_float.setOnClickListener {
-            tv.text = dataTypeing.getNilaiFloat().toString()
+            tv.text = functioning.getNilaiFloatOperation()
         }
 
     }

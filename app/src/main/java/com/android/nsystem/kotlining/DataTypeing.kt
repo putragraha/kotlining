@@ -4,11 +4,11 @@ package com.android.nsystem.kotlining
 * By Putra Nugraha
 */
 
-class DataTypeing {
+open class DataTypeing {
     //variable Integer dengan isi 0
     private var angka : Int = 100
 
-    //variable String
+    //variable String, val means it is final (readonly)
     private val kotaTinggal : String = "Pekanbaru"
 
     //variable Float
@@ -17,8 +17,8 @@ class DataTypeing {
     //variable Double
     private var nilaiDouble : Double = 34.5684
 
-    fun getAngka() : Int = angka;
-    fun getKotaTinggal() : String = kotaTinggal;
-    fun getNilaiFloat() : Float = nilaiFloat;
-    fun getNilaiDouble() : Double = nilaiDouble;
+    fun getAngka() : Int = angka
+    fun getKotaTinggal() : String = kotaTinggal
+    fun getNilaiFloat() : Float = nilaiFloat
+    fun getNilaiDouble() : Double = nilaiDouble
 }
