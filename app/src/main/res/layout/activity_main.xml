@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Hello World!"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn_integer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Int" />
+
+    <Button
+        android:id="@+id/btn_string"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="String" />
+
+    <Button
+        android:id="@+id/btn_float"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Float" />
+
+    <Button
+        android:id="@+id/btn_double"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Double" />
+</LinearLayout>
