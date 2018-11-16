@@ -14,20 +14,20 @@ class Functioning : DataTypeing(){
     fun customAdd(firstValue: Int = 0, secondValue: Int = 0) : Int = firstValue + secondValue
 
     fun getAngkaOperation() : String {
-        val addResult : String = "Hasil tambah " + addAngka(addValue = 5).toString()
-        val substractResult : String = "Hasil kurang " + substractAngka(substractValue = 5)
-        return  addResult + " - " + substractResult
+        val addResult = "Hasil tambah ${addAngka(addValue = 5)}"
+        val substractResult = "Hasil kurang ${substractAngka(substractValue = 5)}"
+        return  "${addResult} - ${substractResult}"
     }
 
     fun getNilaiFloatOperation() : String {
-        val addResult : String = "Hasil tambah " + addNilaiFloat(addValue = 5.5F).toString()
-        val substractResult : String = "Hasil kurang " + substractNilaiFloat(substractValue = 5.5F)
-        return  addResult + " - " + substractResult
+        val addResult = "Hasil tambah ${addNilaiFloat(addValue = 5.5F)}"
+        val substractResult = "Hasil kurang ${substractNilaiFloat(substractValue = 5.5F)}"
+        return  "${addResult} - ${substractResult}"
     }
 
     fun getNilaiDoubleOperation() : String {
-        val addResult : String = "Hasil tambah " + addNilaiDouble(addValue = 5.98172).toString()
-        val substractResult : String = "Hasil kurang " + substractNilaiDouble(substractValue = 5.98172)
-        return  addResult + " - " + substractResult
+        val addResult = "Hasil tambah ${addNilaiDouble(addValue = 5.98172)}"
+        val substractResult = "Hasil kurang ${substractNilaiDouble(substractValue = 5.98172)}"
+        return "${addResult} - ${substractResult}"
     }
 }
