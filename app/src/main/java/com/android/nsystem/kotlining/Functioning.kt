@@ -4,7 +4,7 @@ package com.android.nsystem.kotlining
 * By Putra Nugraha
 */
 
-class Functioning : DataTypeing(){
+open class Functioning : DataTypeing(){
     fun addAngka(addValue: Int = 0) : Int = getAngka() + addValue
     fun substractAngka(substractValue: Int = 0) : Int = getAngka() - substractValue
     fun addNilaiFloat(addValue: Float = 0F) : Float = getNilaiFloat() + addValue
@@ -31,8 +31,8 @@ class Functioning : DataTypeing(){
         return "${addResult} - ${substractResult}"
     }
 
-    fun getRandomValue(vararg values: Int) : String {
-        var result : String = "Berikut nilai terbentuk : "
+    open fun getRandomValue(vararg values: Int) : String {
+        var result = "Berikut nilai terbentuk : "
         for (value in values) {
             result += "${value} "
         }
@@ -40,7 +40,7 @@ class Functioning : DataTypeing(){
     }
 
     fun getRandomValueOwner(name : String, vararg values: String) : String {
-        var result : String = ""
+        var result = ""
         for (value in values) {
             result += "${value} "
         }

@@ -54,4 +54,22 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Score in Range" />
+    <Button
+        android:id="@+id/btn_random_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Random Number" />
+
+    <Button
+        android:id="@+id/btn_ordered_number_while"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ordered Number from While" />
+
+    <Button
+        android:id="@+id/btn_ordered_number_do"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ordered Number from Do While" />
+
 </LinearLayout>
