@@ -27,7 +27,9 @@ class MainActivity : AppCompatActivity() {
 
         //menampilkan data string
         btn_string.setOnClickListener {
-            tv.text = functioning.getKotaTinggal()
+            tv.text = functioning.getRandomValueOwner("Putra", "1", "4", "7", "9", "12")
+//            tv.text = functioning.getRandomValue(1, 4, 7, 9, 12)
+//            tv.text = functioning.getKotaTinggal()
         }
 
         //menampilkan data float

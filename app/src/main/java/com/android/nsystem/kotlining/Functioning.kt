@@ -30,4 +30,21 @@ class Functioning : DataTypeing(){
         val substractResult = "Hasil kurang ${substractNilaiDouble(substractValue = 5.98172)}"
         return "${addResult} - ${substractResult}"
     }
+
+    fun getRandomValue(vararg values: Int) : String {
+        var result : String = "Berikut nilai terbentuk : "
+        for (value in values) {
+            result += "${value} "
+        }
+        return result
+    }
+
+    fun getRandomValueOwner(name : String, vararg values: String) : String {
+        var result : String = ""
+        for (value in values) {
+            result += "${value} "
+        }
+        return "${name} memiliki nilai random ${result}"
+    }
+
 }
