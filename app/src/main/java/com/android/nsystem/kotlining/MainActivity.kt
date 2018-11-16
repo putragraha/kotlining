@@ -7,6 +7,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 class MainActivity : AppCompatActivity() {
 
     private val functioning : Functioning = Functioning()
+    private val conditioning : Conditioning = Conditioning()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -37,5 +38,16 @@ class MainActivity : AppCompatActivity() {
             tv.text = functioning.getNilaiFloatOperation()
         }
 
+        btn_compare_value.setOnClickListener {
+            tv.text = conditioning.compareValue(firstValue = 10, secondValue = 2)
+        }
+
+        btn_score.setOnClickListener {
+            tv.text = conditioning.readScore(totalScore = 3)
+        }
+
+        btn_score_in_range.setOnClickListener {
+            tv.text = conditioning.readScore(totalScore = 81)
+        }
     }
 }
