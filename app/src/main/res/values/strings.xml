@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Kotlining</string>
+    <string name="label_browse">Browse</string>
+    <string name="label_call">Make Call</string>
+    <string name="label_send_text_message">Send Text Message</string>
+    <string name="label_share">Share</string>
+    <string name="label_send_email">Send Email</string>
+    <string name="label_goto_second_activity">Go To Second Activity</string>
+    <string name="hello_world">Hello World</string>
 </resources>
